@@ -15,11 +15,11 @@
       $(function() {
         $(".navbut[href]").on('click', function(e) {
         e.preventDefault();
-        $('html, body').animate({ scrollTop: $($(this).attr('href')).offset().top-190}, 300, 'swing');
-        $('html, body').animate({ scrollTop: $($(this).attr('href')).offset().top-220}, 100, 'linear');
+        $('html, body').animate({ scrollTop: $($(this).attr('href')).offset().top-180}, 300, 'swing');
+        $('html, body').animate({ scrollTop: $($(this).attr('href')).offset().top-210}, 100, 'linear');
+        $('html, body').animate({ scrollTop: $($(this).attr('href')).offset().top-180}, 100, 'linear');
         $('html, body').animate({ scrollTop: $($(this).attr('href')).offset().top-190}, 100, 'linear');
-        $('html, body').animate({ scrollTop: $($(this).attr('href')).offset().top-200}, 100, 'linear');
-        $('html, body').animate({ scrollTop: $($(this).attr('href')).offset().top-190}, 100, 'linear');
+        $('html, body').animate({ scrollTop: $($(this).attr('href')).offset().top-180}, 100, 'linear');
         });
       });
       $(document).ready(function() {
@@ -71,9 +71,9 @@
     <section class='fades' id='about'>
       <h2>About</h2>
       <div class='row justify-content-md-center'>
-        <div class='col-8'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
-          Donec finibus nisl eget dui vestibulum, in vestibulum metus luctus. 
-          Ut interdum, est ac placerat </div>
+        <div class='col-10'>Hi, I have been creating software for 15 years.  I'm currently in the EvolveU Full Stack Developer Program to build on my skills. 
+          As a Scrabble enthusiast and competitive tournament player, I enjoy making software for Scrabble (and other word game) players.
+          You can check out those and other projects I've worked on below.</div>
       </div>
     </section>
     <section class='fades' id='projects'>
@@ -92,12 +92,12 @@
         </div>
       </div>
       <div class='row'>
-        <div class='card project col'>Project 1</div>
-        <div class='card project-info col-7'>Project 1 photo</div>
+        <div class='card project col'>Project 2</div>
+        <div class='card project-info col-7'>Project 2 info</div>
       </div>
       <div class='row'>
-        <div class='card project col'>Project 1</div>
-        <div class='card project-info col-7'>Project 1 photo</div>
+        <div class='card project col'>Project 3</div>
+        <div class='card project-info col-7'>Project 3 info</div>
       </div>
     </section>
     <section class='fades' id='skills'>
@@ -160,7 +160,7 @@ h2 {
   text-align: center;
   margin: 8rem 0rem 2rem;
 }
-.col-8 {
+.col-10 {
   font-size: 2rem;
   margin-bottom:4rem;
   width: auto;

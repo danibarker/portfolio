@@ -10,6 +10,7 @@
     <title>Danielle Barker Portfolio</title>
     <script>
       // bounce animation
+      
       $(function() {
         $(".navbut[href]").on('click', function(e) {
         e.preventDefault();
@@ -42,10 +43,10 @@
                 } 
                 
                 else if (top_of_window < bottom_of_object && top_of_object < bottom_of_window && $(this).css("opacity")==0){
-                    $(this).animate({'opacity':'1'},1000);
+                    $(this).animate({'opacity':'1'},1500);
                 }
                 
-            }); 
+            });
         
         });
         
@@ -55,12 +56,14 @@
       </script>
   </head>
 <body>
+
   <div class="container">
     <h1 class='fades'>Danielle Barker</h1>
     <div id='nav' class='row mt-5'>
       <div class='col'>
         <a href='#about' class='navbut'><button class='btn btn-warning'>About</button></a>
       </div>
+      <br>
       <div class='col'>
         <a href='#projects' class='navbut'><button class='btn btn-info'>Projects</button></a>
       </div>
@@ -85,7 +88,7 @@
       </div>
     </section>
     <section class='fades' id='projects'>
-      <h2>Projects</h2>
+      <h2 class='snav'>Projects</h2>
       <div class='row'>
         <div class='card project col'>
           Word Game Twitch Bot <br /><br />
@@ -94,7 +97,7 @@
         </div>
         <div class='card project-info col-7'>
           <div class='card-horizontal'>
-            <img class="card-img" src="twitchbot.png" alt=''>
+            <img class="card-img" src="images/twitchbot.png" alt=''>
             <div class='proj-desc'>A TwitchBot written in Python using TwitchIO.  Used by streamers of word games for their viewers to be able to look up words and search word patterns.</div>
           </div>
         </div>
@@ -107,7 +110,7 @@
         </div>
         <div class='card project-info col-7'>
           <div class='card-horizontal'>
-            <img class="card-img" src="discordbot.png" alt=''>
+            <img class="card-img" src="images/discordbot.png" alt=''>
             <div class='proj-desc'>A Discord Bot written in Python.  Multi-function bot for running Scrabble events.  Pairing algorithms, dictionary functions, results tracking, game analysis generator, and text based word games.</div>
           </div>
         </div>
@@ -120,7 +123,7 @@
         </div>
         <div class='card project-info col-7'>
           <div class='card-horizontal'>
-            <img class="card-img" src="scrabblestats.png" alt=''>
+            <img class="card-img" src="images/scrabblestats.png" alt=''>
             <div class='proj-desc'>Scrabble statistics tracking for multiple clubs.  Built with VueJS</div>
           </div>
         </div>
@@ -130,11 +133,34 @@
       <h2>Skills</h2>
       <div class='row justify-content-md-center'>
         <div class='col-10'>
-          <br />
-          JS: JS, VueJS, node.JS, jQuery <br /> <br />
-          HTML: HTML5, CSS3, Bootstrap <br /><br />
-          Other: Python, mySQL, GitHub, Photoshop
-        </div>  
+          <div class='row'>
+            <div class='col'>
+              JS:
+            </div>
+          </div>
+          <div class='row'>
+            <div class='col'>
+              <img class='logo' src='images/javascript.png'>
+              <img class='logo' src='images/nodejs.svg.png'>
+              <img class='logo' src='images/jquery.png'>
+              <img class='logo' src='images/800px-Vue.js_Logo_2.svg.png'>
+            </div>
+          </div>
+
+          <div class='row'><div class='col'>HTML:</div> <div class='col'>Other:</div></div>
+          <div class='row'>
+            <div class='col'>
+              <img class='logo' src='images/html5.png'>
+              <img class='logo' src="images/css3.png" alt="">
+              <img class='logo' src='images/bootstrap.png' alt="">
+            </div>
+            <div class='col'><img class = 'logo' src="images/python.png" alt="">
+              <img class='logo' src="images/postgresql.png" alt="">
+              <img class='logo' src="images/github.png" alt="">
+              <img class='logo' src="images/photoshop.png" alt="">
+            </div>
+          </div> 
+        </div> 
       </div>    
     </section>
     <section class='fades' id='contact'>
@@ -153,6 +179,7 @@
 
 <style>
 body  {
+  display: flex;
   font-family: 'Montserrat', sans-serif;
   background-image: url('https://whcompare.com/wp-content/uploads/pattern-9.svg');
   background-size: 500px auto;
@@ -196,11 +223,13 @@ h1 {
     margin:1rem;
     
 }
-
+.col {
+  margin:1rem;
+}
 h2 {
   font-size: 4rem;
   text-align: center;
-  margin: 8rem 0rem 2rem;
+  margin: 6rem 0rem 1rem;
 }
 .col-10 {
   font-size: 2rem;
@@ -236,6 +265,7 @@ h2 {
   position: sticky;
   top:2rem;
   z-index: 1;
+  
 }
 
 @media only screen and (max-width: 1000px){
@@ -243,7 +273,7 @@ h2 {
     font-size: 12px;
   }
 }
-@media only screen and (max-width: 450px){
+@media only screen and (max-width: 750px){
   html {
     font-size: 8px;
   }
@@ -274,9 +304,13 @@ h2 {
   margin: auto;
   width: 30%;
   height: 60%;
-  
 }
  
+}
+
+.logo {
+  max-height: 5rem;
+  margin: auto 0.5rem;
 }
 
 </style>

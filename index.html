@@ -6,313 +6,130 @@
     <meta name="viewport" content="width=device-width,initial-scale=1.0">
     <link rel='stylesheet' href='https://bootswatch.com/4/united/bootstrap.min.css'>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="animations.js"></script>
     <title>Danielle Barker Portfolio</title>
-    <script>
-      // bounce animation
-      
-      $(function() {
-        $(".navbut[href]").on('click', function(e) {
-        e.preventDefault();
-        $('html, body').animate({ scrollTop: $($(this).attr('href')).offset().top-180}, 300, 'swing');
-        $('html, body').animate({ scrollTop: $($(this).attr('href')).offset().top-210}, 100, 'linear');
-        $('html, body').animate({ scrollTop: $($(this).attr('href')).offset().top-180}, 100, 'linear');
-        $('html, body').animate({ scrollTop: $($(this).attr('href')).offset().top-190}, 100, 'linear');
-        $('html, body').animate({ scrollTop: $($(this).attr('href')).offset().top-180}, 100, 'linear');
-        });
-      });
-      // fade animation
-      $(document).ready(function() {
     
-        
-        $(window).scroll( function(){
-            
-          
-            $(".fades").each( function(i){
-                console.log(); 
-                let bottom_of_object = $(this).offset().top + $(this).outerHeight();
-                let top_of_window = $(window).scrollTop();
-                let bottom_of_window = $(window).scrollTop()+$(window).height();
-                let top_of_object = $(this).offset().top;
-                console.log(top_of_window ,top_of_object,bottom_of_object,bottom_of_window);
-               
-                if( (top_of_window > bottom_of_object || top_of_object > bottom_of_window) && $(this).css("opacity")==1){
-                    
-                    $(this).animate({'opacity':'0'},1);
-                        
-                } 
-                
-                else if (top_of_window < bottom_of_object && top_of_object < bottom_of_window && $(this).css("opacity")==0){
-                    $(this).animate({'opacity':'1'},1500);
-                }
-                
-            });
-        
-        });
-        
-    });
-
-    
-      </script>
   </head>
-<body>
+  <body>
 
-  <div class="container">
-    <h1 class='fades'>Danielle Barker</h1>
-    <div id='nav' class='row mt-5'>
-      <div class='col'>
-        <a href='#about' class='navbut'><button class='btn btn-warning'>About</button></a>
-      </div>
-      <br>
-      <div class='col'>
-        <a href='#projects' class='navbut'><button class='btn btn-info'>Projects</button></a>
-      </div>
-      <div class='col'>        
-        <a href='#skills' class='navbut'><button class='btn btn-success'>Skills</button></a>
-      </div>
-      <div class='col'>        
-        <a href='#contact' class='navbut'><button class='btn btn-primary'>Contact</button></a>
-      </div>
-    </div>
-    <section class='fades' id='about'>
-      <h2>About</h2>
-      <div class='row justify-content-md-center'>
-        <div class='col-10'>Hi, I have been creating software for over 15 years.  I'm currently in the 
-          <a href='https://www.evolveu.ca/program' target='_blank'>
-          EvolveU Full Stack Developer Program </a>
-          to build on my skills. 
-          As a Scrabble enthusiast and competitive tournament player, 
-          I enjoy making software for Scrabble (and other word game) players.
-          You can check out those and other projects I've worked on below. <br />
-          <a onclick="alert('need to code this still');" href=''>Download Resume</a></div>
-      </div>
-    </section>
-    <section class='fades' id='projects'>
-      <h2 class='snav'>Projects</h2>
-      <div class='row'>
-        <div class='card project col'>
-          Word Game Twitch Bot <br /><br />
-          <a href='http://github.com/danibarker/TwitchBot' target='_blank'>GitHub Link</a>
-
+    <div class="container">
+      <h1 class='fades'>Danielle Barker</h1>
+      <div id='nav' class='row mt-5'>
+        <div class='col'>
+          <a href='#about' class='navbut'><button class='btn btn-warning'>About</button></a>
         </div>
-        <div class='card project-info col-7'>
-          <div class='card-horizontal'>
-            <img class="card-img" src="images/twitchbot.png" alt=''>
-            <div class='proj-desc'>A TwitchBot written in Python using TwitchIO.  Used by streamers of word games for their viewers to be able to look up words and search word patterns.</div>
+        <br>
+        <div class='col'>
+          <a href='#projects' class='navbut'><button class='btn btn-info'>Projects</button></a>
+        </div>
+        <div class='col'>        
+          <a href='#skills' class='navbut'><button class='btn btn-success'>Skills</button></a>
+        </div>
+        <div class='col'>        
+          <a href='#contact' class='navbut'><button class='btn btn-primary'>Contact</button></a>
+        </div>
+      </div>
+      <section class='fades' id='about'>
+        <h2>About</h2>
+        <div class='row justify-content-md-center'>
+          <div class='col-10'>Hi, I have been creating software for over 15 years.  I'm currently in the 
+            <a href='https://www.evolveu.ca/program' target='_blank'>
+            EvolveU Full Stack Developer Program </a>
+            to build on my skills. 
+            As a Scrabble enthusiast and competitive tournament player, 
+            I enjoy making software for Scrabble (and other word game) players.
+            You can check out those and other projects I've worked on below. <br />
+            <a onclick="alert('need to code this still');" href=''>Download Resume</a></div>
+        </div>
+      </section>
+      <section class='fades' id='projects'>
+        <h2 class='snav'>Projects</h2>
+        <div class='row'>
+          <div class='card project col'>
+            Word Game Twitch Bot <br /><br />
+            <a href='http://github.com/danibarker/TwitchBot' target='_blank'>GitHub Link</a>
+
           </div>
-        </div>
-      </div>
-      <div class='row'>
-        <div class='card project col'>
-          Scrabble Event <br /> Discord Bot<br /><br />
-          <a href='' onclick="alert('need to code this still');">More Info</a>
-
-        </div>
-        <div class='card project-info col-7'>
-          <div class='card-horizontal'>
-            <img class="card-img" src="images/discordbot.png" alt=''>
-            <div class='proj-desc'>A Discord Bot written in Python.  Multi-function bot for running Scrabble events.  Pairing algorithms, dictionary functions, results tracking, game analysis generator, and text based word games.</div>
-          </div>
-        </div>
-      </div>
-      <div class='row'>
-        <div class='card project col'>
-          Scrabble Stats Website <br /><br />
-          <a href='http://danibarker.github.io' target='_blank'>Link</a>
-
-        </div>
-        <div class='card project-info col-7'>
-          <div class='card-horizontal'>
-            <img class="card-img" src="images/scrabblestats.png" alt=''>
-            <div class='proj-desc'>Scrabble statistics tracking for multiple clubs.  Built with VueJS</div>
-          </div>
-        </div>
-      </div>
-    </section>
-    <section class='fades' id='skills'>
-      <h2>Skills</h2>
-      <div class='row justify-content-md-center'>
-        <div class='col-10'>
-          <div class='row'>
-            <div class='col'>
-              JS:
+          <div class='card project-info col-7'>
+            <div class='card-horizontal'>
+              <img class="card-img" src="images/twitchbot.png" alt=''>
+              <div class='proj-desc'>A TwitchBot written in Python using TwitchIO.  Used by streamers of word games for their viewers to be able to look up words and search word patterns.</div>
             </div>
           </div>
-          <div class='row'>
-            <div class='col'>
-              <img class='logo' src='images/javascript.png'>
-              <img class='logo' src='images/nodejs.svg.png'>
-              <img class='logo' src='images/jquery.png'>
-              <img class='logo' src='images/800px-Vue.js_Logo_2.svg.png'>
+        </div>
+        <div class='row'>
+          <div class='card project col'>
+            Scrabble Event <br /> Discord Bot<br /><br />
+            <a href='' onclick="alert('need to code this still');">More Info</a>
+
+          </div>
+          <div class='card project-info col-7'>
+            <div class='card-horizontal'>
+              <img class="card-img" src="images/discordbot.png" alt=''>
+              <div class='proj-desc'>A Discord Bot written in Python.  Multi-function bot for running Scrabble events.  Pairing algorithms, dictionary functions, results tracking, game analysis generator, and text based word games.</div>
             </div>
           </div>
+        </div>
+        <div class='row'>
+          <div class='card project col'>
+            Scrabble Stats Website <br /><br />
+            <a href='http://danibarker.github.io' target='_blank'>Link</a>
 
-          <div class='row'><div class='col'>HTML:</div> <div class='col'>Other:</div></div>
-          <div class='row'>
-            <div class='col'>
-              <img class='logo' src='images/html5.png'>
-              <img class='logo' src="images/css3.png" alt="">
-              <img class='logo' src='images/bootstrap.png' alt="">
+          </div>
+          <div class='card project-info col-7'>
+            <div class='card-horizontal'>
+              <img class="card-img" src="images/scrabblestats.png" alt=''>
+              <div class='proj-desc'>Scrabble statistics tracking for multiple clubs.  Built with VueJS</div>
             </div>
-            <div class='col'><img class = 'logo' src="images/python.png" alt="">
-              <img class='logo' src="images/postgresql.png" alt="">
-              <img class='logo' src="images/github.png" alt="">
-              <img class='logo' src="images/photoshop.png" alt="">
+          </div>
+        </div>
+      </section>
+      <section class='fades' id='skills'>
+        <h2>Skills</h2>
+        <div class='row justify-content-md-center'>
+          <div class='col-10'>
+            <div class='row'>
+              <div class='col'>
+                JS:
+              </div>
             </div>
+            <div class='row'>
+              <div class='col'>
+                <img class='logo' src='images/javascript.png'>
+                <img class='logo' src='images/nodejs.svg.png'>
+                <img class='logo' src='images/jquery.png'>
+                <img class='logo' src='images/800px-Vue.js_Logo_2.svg.png'>
+              </div>
+            </div>
+
+            <div class='row'><div class='col'>HTML:</div> <div class='col'>Other:</div></div>
+            <div class='row'>
+              <div class='col'>
+                <img class='logo' src='images/html5.png'>
+                <img class='logo' src="images/css3.png" alt="">
+                <img class='logo' src='images/bootstrap.png' alt="">
+              </div>
+              <div class='col'><img class = 'logo' src="images/python.png" alt="">
+                <img class='logo' src="images/postgresql.png" alt="">
+                <img class='logo' src="images/github.png" alt="">
+                <img class='logo' src="images/photoshop.png" alt="">
+              </div>
+            </div> 
           </div> 
-        </div> 
-      </div>    
-    </section>
-    <section class='fades' id='contact'>
-      <h2>Contact</h2>
-      <div class='row justify-content-md-center'>
-        <div class='col-10'>
-          If you have any questions or are interested in working with me on something awesome, let me know: <br /><br />
-          Phone: 587-852-0234 <br /><br />
-          Email: danielleemmalee@icloud.com
-        </div>      
-      </div>
-    </section>
-  </div>
-
-
-
-<style>
-body  {
-  display: flex;
-  font-family: 'Montserrat', sans-serif;
-  background-image: url('https://whcompare.com/wp-content/uploads/pattern-9.svg');
-  background-size: 500px auto;
-  color: rgb(20, 20, 20);
-}
-
-
-h1 { 
-  font-size: 8rem;
-  text-align: center;
-  margin: 12rem 0 8rem 0;
-}
-.fades h1 {
-    opacity: 1;
-}
-.fades section {
-    opacity: 0;
-}
-
-.card-img {
-  margin: auto 1rem;
-  width: 40%;
-  height: auto;
-  
-}
-.proj-desc {
-  justify-content: center;
-  margin: auto;
-  font-size: 1rem;
-}
-.card-horizontal {
-  display: flex;
-  flex: 1 2 auto;
-}
-.card {
-    border-radius: 1rem;
-    padding: auto;
-    justify-content: center;
-    text-align: center;
-    height: 20rem;
-    font-size: 1.5rem;
-    margin:1rem;
-    
-}
-.col {
-  margin:1rem;
-}
-h2 {
-  font-size: 4rem;
-  text-align: center;
-  margin: 6rem 0rem 1rem;
-}
-.col-10 {
-  font-size: 2rem;
-  margin-bottom:4rem;
-  width: auto;
-}
-.col-8{
-  font-size: 2rem;
-  margin-bottom:4rem;
-  width: auto;
-}
-.btn {
-  height: 7rem;
-  width: 100%;
-  font-size:2rem;
-  border-radius: 25px;
-}
-
-@keyframes btn-hover {
-  0% {
-    border-radius: 25px;
-  }
-  100%{
-    border-radius: 50%;
-  }
-}
-.btn:hover {
-  
-  animation: btn-hover 500ms 1;
-  border-radius: 50%;
-}
-#nav {
-  display: flexbox;
-  position: sticky;
-  top:2rem;
-  z-index: 1;
-  
-}
-
-@media only screen and (max-width: 1000px){
-  html {
-    font-size: 12px;
-  }
-}
-@media only screen and (max-width: 780px){
-  html {
-    font-size: 8px;
-  }
-  .col-10 {
-    font-size: 1.5rem;
-  }
-  .card {
-    height: 10rem;
-    font-size: 1rem;
-  }
-  .proj-desc {
-  justify-content: center;
-  margin: auto;
-  font-size: 0.75rem;
-}
-.card-img {
-  margin: auto 1rem;
-  width: 30%;
-  height: 60%;
-  
-}
-}
-@media only screen and (max-height:450px) {
-  html {
-    font-size: 6px;
-  }
-  .card-img {
-  margin: auto;
-  width: 30%;
-  height: 60%;
-}
- 
-}
-
-.logo {
-  max-height: 5rem;
-  margin: auto 0.5rem;
-}
-
-</style>
+        </div>    
+      </section>
+      <section class='fades' id='contact'>
+        <h2>Contact</h2>
+        <div class='row justify-content-md-center'>
+          <div class='col-10'>
+            If you have any questions or are interested in working with me on something awesome, let me know: <br /><br />
+            Phone: 587-852-0234 <br /><br />
+            Email: danielleemmalee@icloud.com
+          </div>      
+        </div>
+      </section>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,137 @@
+body  {
+  display: flex;
+  font-family: 'Montserrat', sans-serif;
+  background-image: url('https://whcompare.com/wp-content/uploads/pattern-9.svg');
+  background-size: 500px auto;
+  color: rgb(20, 20, 20);
+}
+
+
+h1 { 
+  font-size: 8rem;
+  text-align: center;
+  margin: 12rem 0 8rem 0;
+}
+.fades h1 {
+    opacity: 1;
+}
+.fades section {
+    opacity: 0;
+}
+
+.card-img {
+  margin: auto 1rem;
+  width: 40%;
+  height: auto;
+  
+}
+.proj-desc {
+  justify-content: center;
+  margin: auto;
+  font-size: 1rem;
+}
+.card-horizontal {
+  display: flex;
+  flex: 1 2 auto;
+}
+.card {
+    border-radius: 1rem;
+    padding: auto;
+    justify-content: center;
+    text-align: center;
+    height: 20rem;
+    font-size: 1.5rem;
+    margin:1rem;
+    
+}
+.col {
+  margin:1rem;
+}
+h2 {
+  font-size: 4rem;
+  text-align: center;
+  margin: 6rem 0rem 1rem;
+}
+.col-10 {
+  font-size: 2rem;
+  margin-bottom:4rem;
+  width: auto;
+}
+.col-8{
+  font-size: 2rem;
+  margin-bottom:4rem;
+  width: auto;
+}
+.btn {
+  height: 7rem;
+  width: 100%;
+  font-size:2rem;
+  border-radius: 25px;
+}
+
+@keyframes btn-hover {
+  0% {
+    border-radius: 25px;
+  }
+  100%{
+    border-radius: 50%;
+  }
+}
+.btn:hover {
+  
+  animation: btn-hover 500ms 1;
+  border-radius: 50%;
+}
+#nav {
+  display: flexbox;
+  position: sticky;
+  top:2rem;
+  z-index: 1;
+  
+}
+
+@media only screen and (max-width: 1000px){
+  html {
+    font-size: 12px;
+  }
+}
+@media only screen and (max-width: 780px){
+  html {
+    font-size: 8px;
+  }
+  .col-10 {
+    font-size: 1.5rem;
+  }
+  .card {
+    height: 10rem;
+    font-size: 1rem;
+  }
+  .proj-desc {
+  justify-content: center;
+  margin: auto;
+  font-size: 0.75rem;
+}
+.card-img {
+  margin: auto 1rem;
+  width: 30%;
+  height: 60%;
+  
+}
+}
+@media only screen and (max-height:450px) {
+  html {
+    font-size: 6px;
+  }
+  .card-img {
+  margin: auto;
+  width: 30%;
+  height: 60%;
+}
+ 
+}
+
+.logo {
+  max-height: 5rem;
+  margin: auto 0.5rem;
+}
+

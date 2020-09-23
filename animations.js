@@ -19,12 +19,10 @@
         
         
         $(".fades").each( function(i){
-            console.log(); 
             let bottom_of_object = $(this).offset().top + $(this).outerHeight();
             let top_of_window = $(window).scrollTop();
             let bottom_of_window = $(window).scrollTop()+$(window).height();
             let top_of_object = $(this).offset().top;
-            console.log(top_of_window ,top_of_object,bottom_of_object,bottom_of_window);
             
             if( (top_of_window > bottom_of_object || top_of_object > bottom_of_window) && $(this).hasClass("fadein")){
                 
@@ -52,7 +50,18 @@
             $('#nav').addClass('fadein');
         }
         
-    
+        var scrollPos = $(document).scrollTop();
+        $('#navside a').each(function () {
+            var currLink = $(this);
+            var refElement = $(currLink.attr("href"));
+            if (refElement.position().top <= scrollPos+200 && refElement.position().top + refElement.height() > scrollPos+200) {
+                $('a').removeClass("active");
+                currLink.addClass("active");
+            }
+            else{
+                currLink.removeClass("active");
+            }
+        });
     });
     
 });

@@ -1,20 +1,12 @@
-<div class='row'>
-    <video id= 'video1' controls src="movie.mp4"></video>
-    <video id= 'video1' controls src="movie.mp4"></video>
-    <video id= 'video1' controls src="movie.mp4"></video>
-    <video id= 'video1' controls src="movie.mp4"></video>
-    <video id= 'video1' controls src="movie.mp4"></video>
-    <video id= 'video1' controls src="movie.mp4"></video>
-    <button onclick="video1.play()">play/pause</button>
-</div>
+<form action="save">
+    <input type="text" name="" id="name"><br />
+    <textarea name="" id="comment" cols="30" rows="10"></textarea>
+    <input type="submit" value="Input">
+</form>
 
 
-<style>
-    .row {
-       
-        display: inline-block;
+<script>
+    function save(){
+        console.log('saved')
     }
-    video {
-        max-width: 10rem;
-    }
-</style>
+</script>

@@ -66,7 +66,7 @@ h2 {
   font-size: 4rem;
   text-align: center;
   margin: 1rem 0rem 2rem;
-  padding-top: 2rem
+  padding-top: 1rem
 }
 .col-10 {
   font-size: 2rem;
@@ -79,6 +79,10 @@ h2 {
   width: 100%;
   font-size:2rem;
   border-radius: 1rem;
+}
+
+a {
+  align-items: center;
 }
 #navside .btn{
   height: 4rem;
@@ -97,12 +101,16 @@ h2 {
     opacity: 1;
   }
 }
-.btn:hover, .navside:hover {
+.btn:hover{
   
   animation: btn-hover 0s infinite;
   border-radius: 50%;
   filter: drop-shadow(0 0 0.75rem grey);
   opacity: 1 !important;
+}
+
+.active {
+  border-radius: 50%;
 }
 
 #navside {

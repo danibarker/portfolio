@@ -1,3 +1,7 @@
+html, body {
+  scroll-behavior: smooth;
+}
+
 body  {
   display: flex;
   font-family: 'Montserrat', sans-serif;
@@ -12,20 +16,28 @@ h1 {
   text-align: center;
   margin: 12rem 0 8rem 0;
 }
-.fades h1{
+
+.fadein {
+  
+  transition: opacity 1s;
+  transition-delay: 100ms;
   opacity: 1;
 }
-.fades section {
+.fadeout {
+  transition: opacity 1s;
+  transition-delay: 100ms;
   opacity: 0;
 }
-
 .card-img {
   margin: auto 1rem;
   width: 40%;
   height: auto;
   
 }
-.proj-desc {
+.project {
+  margin: 2rem
+}
+.proj-desc{
   justify-content: center;
   margin: auto;
   font-size: 1rem;
@@ -47,10 +59,14 @@ h1 {
 .col {
   margin:1rem;
 }
+.row {
+  width:100%;
+}
 h2 {
   font-size: 4rem;
   text-align: center;
-  margin: 6rem 0rem 1rem;
+  margin: 1rem 0rem 2rem;
+  padding-top: 2rem
 }
 .col-10 {
   font-size: 2rem;
@@ -64,6 +80,11 @@ h2 {
   font-size:2rem;
   border-radius: 1rem;
 }
+#navside .btn{
+  height: 4rem;
+  font-size: 1rem;
+  min-width: 7rem;
+}
 
 @keyframes btn-hover {
   0% {
@@ -73,29 +94,30 @@ h2 {
   100%{
     border-radius: 50%;
     filter: drop-shadow(0 0 0.75rem grey);
+    opacity: 1;
   }
 }
-.btn:hover {
+.btn:hover, .navside:hover {
   
-  animation: btn-hover 500ms 1;
+  animation: btn-hover 0s infinite;
   border-radius: 50%;
   filter: drop-shadow(0 0 0.75rem grey);
+  opacity: 1 !important;
 }
 
-#nav {
+#navside {
   display: flexbox;
   position: sticky;
-  top:2rem;
+  top:5rem;
   z-index: 1;
   
 }
-
 @media only screen and (max-width: 1000px){
   html {
     font-size: 12px;
   }
 }
-@media only screen and (max-width: 780px){
+@media only screen and (max-width: 805px){
   html {
     font-size: 8px;
   }
@@ -131,7 +153,7 @@ h2 {
 }
 
 .logo {
-  max-height: 5rem;
+  max-height: 4rem;
   margin: auto 0.5rem;
 }
 

@@ -1,15 +1,34 @@
-html, body {
+html, body, div.parallax {
   scroll-behavior: smooth;
 }
 
 body  {
   display: flex;
   font-family: 'Montserrat', sans-serif;
-  background-image: url('https://whcompare.com/wp-content/uploads/pattern-9.svg');
-  background-size: 500px auto;
   color: rgb(20, 20, 20);
 }
 
+
+.bg {
+  position: absolute;
+  height: auto;
+  top: 0;
+  left: 0;
+  color: hotpink;
+  transform: translateZ(-2px) scale(6);
+  height: 250%;
+  object-fit: cover;
+}
+
+.parallax {
+  height: 100vh;
+  overflow-x: hidden;
+  overflow-y: auto;
+  perspective: 0.5px;
+}
+.container-flex {
+  transform: translateZ(0);
+}
 
 h1 { 
   font-size: 8rem;
@@ -131,6 +150,11 @@ a {
   html {
     font-size: 8px;
   }
+
+  h1 {
+    font-size: 5rem;
+  }
+
   .col-10 {
     font-size: 1.5rem;
   }
@@ -154,6 +178,8 @@ a {
   html {
     font-size: 6px;
   }
+
+  
   .card-img {
   margin: auto;
   width: 30%;

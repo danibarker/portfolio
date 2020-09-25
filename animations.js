@@ -14,9 +14,8 @@
     // fade animation
     $(document).ready(function() {
 
-    
-    $(window).scroll( function(){
-        
+    console.log('ready');
+    $('div.parallax').scroll( function(){
         
         $(".fades").each( function(i){
             let bottom_of_object = $(this).offset().top + $(this).outerHeight();

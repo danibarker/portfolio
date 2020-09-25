@@ -4,7 +4,7 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width,initial-scale=1.0">
-    <link rel='stylesheet' href='https://bootswatch.com/4/united/bootstrap.min.css'>
+    <link rel='stylesheet' href='bootstrap.css'>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
@@ -13,152 +13,154 @@
     
   </head>
   <body>
-    <div class="container-flex">
-      <div class='row'>
-        <div class='col-1'>
-          <div id='navside' class='fadeout row mt-5'>
-            <div class='col'>
-              <a href='#about' class='navside btn btn-warning'>About</a>
-            </div>
-            <div class='col'>
-              <a href='#projects' class='navside btn btn-info'>Projects</a>
-            </div>
-            <div class='col'>        
-              <a href='#skills' class='navside btn btn-success'>Skills</a>
-            </div>
-            <div class='col'>        
-              <a href='#contact' class='navside btn btn-primary'>Contact</a>
+    <div class='parallax'>
+      <img class='bg' src="https://whcompare.com/wp-content/uploads/pattern-9.svg" height='400%' alt="">
+      <div class="container-flex">
+        <div class='row'>
+          <div class='col-1'>
+            <div id='navside' class='fadeout row mt-5'>
+              <div class='col'>
+                <a href='#about' class='navside btn btn-warning'>About</a>
+              </div>
+              <div class='col'>
+                <a href='#projects' class='navside btn btn-info'>Projects</a>
+              </div>
+              <div class='col'>        
+                <a href='#skills' class='navside btn btn-success'>Skills</a>
+              </div>
+              <div class='col'>        
+                <a href='#contact' class='navside btn btn-primary'>Contact</a>
+              </div>
             </div>
           </div>
-        </div>
-        <div class="container col">
-        
-          <h1 class='fades fadein'>Danielle Barker</h1>
-          <div id='nav' class='row mt-5 fadein'>
-            <div class='col'>
-              <a href='#about' class='navbut btn btn-warning'>About</a>
+          <div class="container col">
+          
+            <h1 class='fades fadein'>Danielle Barker</h1>
+            <div id='nav' class='row mt-5 fadein'>
+              <div class='col'>
+                <a href='#about' class='navbut btn btn-warning'>About</a>
+              </div>
+              <div class='col'>
+                <a href='#projects' class='navbut btn btn-info'>Projects</a>
+              </div>
+              <div class='col'>        
+                <a href='#skills' class='navbut btn btn-success'>Skills</a>
+              </div>
+              <div class='col'>        
+                <a href='#contact' class='navbut btn btn-primary'>Contact</a>
+              </div>
             </div>
-            <div class='col'>
-              <a href='#projects' class='navbut btn btn-info'>Projects</a>
-            </div>
-            <div class='col'>        
-              <a href='#skills' class='navbut btn btn-success'>Skills</a>
-            </div>
-            <div class='col'>        
-              <a href='#contact' class='navbut btn btn-primary'>Contact</a>
-            </div>
-          </div>
-          <section class='fades fadeout' id='about'>
-            <h2>About</h2>
-            <div class='row justify-content-center'>
-              <div class='paragraph col-10'>Hi, I have been creating software for over 15 years.  I'm currently in the 
-                <a href='https://www.evolveu.ca/program' target='_blank'>
-                EvolveU Full Stack Developer Program </a>
-                to build on my skills. 
-                As a Scrabble enthusiast and competitive tournament player, 
-                I enjoy making software for Scrabble (and other word game) players.
-                You can check out those and other projects I've worked on below. <br />
-                <a onclick="alert('need to code this still');" href=''>Download Resume</a></div>
-            </div>
-          </section>
-          <section class='fades fadeout' id='projects'>
-            <h2 class='snav'>Projects</h2>
-            <div class='row justify-content-center'>
-              <div class='card project col-2'>
-                Word Game Twitch Bot <br /><br />
-                <a href='http://github.com/danibarker/TwitchBot' target='_blank'>GitHub Link</a>
+            <section class='odd fades fadein' id='about'>
+              <h2>About</h2>
+              <div class='row justify-content-center'>
+                <div class='paragraph col-10'>Hi, I have been creating software for over 15 years.  I'm currently in the 
+                  <a href='https://www.evolveu.ca/program' target='_blank'>
+                  EvolveU Full Stack Developer Program </a>
+                  to build on my skills. 
+                  As a Scrabble enthusiast and competitive tournament player, 
+                  I enjoy making software for Scrabble (and other word game) players.
+                  You can check out those and other projects I've worked on below. <br />
+                  <a onclick="alert('need to code this still');" href=''>Download Resume</a></div>
+              </div>
+            </section>
+            <section class='fades fadein' id='projects'>
+              <h2>Projects</h2>
+              <div class='row justify-content-center'>
+                <div class='card project col-2'>
+                  Word Game Twitch Bot <br /><br />
+                  <a href='http://github.com/danibarker/TwitchBot' target='_blank'>GitHub Link</a>
 
-              </div>
-              <div class='card project-info col-7'>
-                <div class='card-horizontal'>
-                  <img class="card-img" src="images/twitchbot.png" alt=''>
-                  <div class='proj-desc'>A TwitchBot written in Python using TwitchIO.  Used by streamers of word games for their viewers to be able to look up words and search word patterns.</div>
                 </div>
-              </div>
-            </div>
-            <div class='row justify-content-center'>
-              <div class='card project col-2'>
-                Scrabble Event <br /> Discord Bot<br /><br />
-                <a href='' onclick="alert('need to code this still');">More Info</a>
-
-              </div>
-              <div class='card project-info col-7'>
-                <div class='card-horizontal'>
-                  <img class="card-img" src="images/discordbot.png" alt=''>
-                  <div class='proj-desc'>A Discord Bot written in Python.  Multi-function bot for running Scrabble events.  Pairing algorithms, dictionary functions, results tracking, game analysis generator, and text based word games.</div>
-                </div>
-              </div>
-            </div>
-            <div class='row justify-content-center'>
-              <div class='card project col-2'>
-                Scrabble Stats Website <br /><br />
-                <a href='http://danibarker.github.io' target='_blank'>Link</a>
-
-              </div>
-              <div class='card project-info col-7'>
-                <div class='card-horizontal'>
-                  <img class="card-img" src="images/scrabblestats.png" alt=''>
-                  <div class='proj-desc'>Scrabble statistics tracking for multiple clubs.  Built with VueJS</div>
-                </div>
-              </div>
-            </div>
-          </section>
-          <section class='fades fadeout' id='skills'>
-            <h2>Skills</h2>
-            <div class='row justify-content-md-center'>
-              <div class='col-10'>
-                <div class='row'>
-                  <div class='col'>
-                    JS:
+                <div class='card project-info col-7'>
+                  <div class='card-horizontal'>
+                    <img class="card-img" src="images/twitchbot.png" alt=''>
+                    <div class='proj-desc'>A TwitchBot written in Python using TwitchIO.  Used by streamers of word games for their viewers to be able to look up words and search word patterns.</div>
                   </div>
                 </div>
-                <div class='row'>
-                  <div class='col'>
-                    <img class='logo' src='images/javascript.png'>
-                    <img class='logo' src='images/nodejs.svg.png'>
-                    <img class='logo' src='images/jquery.png'>
-                    <img class='logo' src='images/800px-Vue.js_Logo_2.svg.png'>
+              </div>
+              <div class='row justify-content-center'>
+                <div class='card project col-2'>
+                  Scrabble Event <br /> Discord Bot<br /><br />
+                  <a href='' onclick="alert('need to code this still');">More Info</a>
+
+                </div>
+                <div class='card project-info col-7'>
+                  <div class='card-horizontal'>
+                    <img class="card-img" src="images/discordbot.png" alt=''>
+                    <div class='proj-desc'>A Discord Bot written in Python.  Multi-function bot for running Scrabble events.  Pairing algorithms, dictionary functions, results tracking, game analysis generator, and text based word games.</div>
                   </div>
                 </div>
+              </div>
+              <div class='row justify-content-center'>
+                <div class='card project col-2'>
+                  Scrabble Stats Website <br /><br />
+                  <a href='http://danibarker.github.io' target='_blank'>Link</a>
 
-                <div class='row'>
-                  <div class='col'>HTML:</div> 
-                  
                 </div>
-                <div class='row'>
-                  <div class='col'>
-                    <img class='logo' src='images/html5.png'>
-                    <img class='logo' src="images/css3.png" alt="">
-                    <img class='logo' src='images/bootstrap.png' alt="">
+                <div class='card project-info col-7'>
+                  <div class='card-horizontal'>
+                    <img class="card-img" src="images/scrabblestats.png" alt=''>
+                    <div class='proj-desc'>Scrabble statistics tracking for multiple clubs.  Built with VueJS</div>
+                  </div>
+                </div>
+              </div>
+            </section>
+            <section class='odd fades fadein' id='skills'>
+              <h2>Skills</h2>
+              <div class='row justify-content-md-center'>
+                <div class='col-10'>
+                  <div class='row'>
+                    <div class='col'>
+                      JS:
+                    </div>
+                  </div>
+                  <div class='row'>
+                    <div class='col'>
+                      <img class='logo' src='images/javascript.png'>
+                      <img class='logo' src='images/nodejs.svg.png'>
+                      <img class='logo' src='images/jquery.png'>
+                      <img class='logo' src='images/800px-Vue.js_Logo_2.svg.png'>
+                    </div>
+                  </div>
+                
+                  <div class='row'>
+                    <div class='col'>HTML:</div> 
+                    
+                  </div>
+                  <div class='row'>
+                    <div class='col'>
+                      <img class='logo' src='images/html5.png'>
+                      <img class='logo' src="images/css3.png" alt="">
+                      <img class='logo' src='images/bootstrap.png' alt="">
+                    </div>
+                    
+                  </div> 
+                  <div class="row">
+                    <div class='col'>Other:</div>
+                  </div>
+                
+                  <div class="row">
+                    <div class='col'><img class = 'logo' src="images/python.png" alt="">
+                      <img class='logo' src="images/postgresql.png" alt="">
+                      <img class='logo' src="images/github.png" alt="">
+                      <img class='logo' src="images/photoshop.png" alt="">
+                    </div>
                   </div>
                   
                 </div> 
-                <div class="row">
-                  <div class='col'>Other:</div>
-                </div>
-              
-                <div class="row">
-                  <div class='col'><img class = 'logo' src="images/python.png" alt="">
-                    <img class='logo' src="images/postgresql.png" alt="">
-                    <img class='logo' src="images/github.png" alt="">
-                    <img class='logo' src="images/photoshop.png" alt="">
-                  </div>
-                </div>
-                
-              </div> 
-            </div>   
-          </section>
-          <section class='fades fadeout' id='contact'>
-            <h2>Contact</h2>
-            <div class='row justify-content-md-center'>
-              <div class='col-10'>
-                If you have any questions or are interested in working with me on something awesome, let me know: <br /><br />
-                Phone: 587-852-0234 <br /><br />
-                Email: <a href="mailto:danielleemmalee@icloud.com">danielleemmalee@icloud.com</a>
-              </div>      
-            </div>
-          </section>
-        
+              </div>   
+            </section>
+            <section class='fades fadein' id='contact'>
+              <h2>Contact</h2>
+              <div class='row justify-content-md-center'>
+                <div class='col-10'>
+                  If you have any questions or are interested in working with me on something awesome, let me know: <br /><br />
+                  Phone: 587-852-0234 <br /><br />
+                  Email: <a href="mailto:danielleemmalee@icloud.com">danielleemmalee@icloud.com</a>
+                </div>      
+              </div>
+            </section>
+        </div>
       </div>
     </div>
   </body>

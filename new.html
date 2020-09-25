@@ -1,12 +1,3 @@
-<form action="save">
-    <input type="text" name="" id="name"><br />
-    <textarea name="" id="comment" cols="30" rows="10"></textarea>
-    <input type="submit" value="Input">
-</form>
-
-
-<script>
-    function save(){
-        console.log('saved')
-    }
-</script>
+<div id="hideaway" style="display:none;">Here's the hidden content</div>
+<a onClick="document.getElementById('hideaway').style.display='block';">Reveal hidden content</a>
+<a onClick="document.getElementById('hideaway').style.display='none';">Hide content again</a>

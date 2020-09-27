@@ -1,39 +1,55 @@
-html, body, div.parallax {
+html, body {
   scroll-behavior: smooth;
-}
 
+}
+::-webkit-scrollbar {
+  background: linear-gradient(180deg, indigo ,rgb(228, 183, 241));
+  width: 0.5em;
+  height: 0.5em;
+}
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(180deg,pink,indigo);
+  border-width: 10px;
+  border-color: white;
+  border-radius: 30px;
+  box-shadow: inset 1px 1px 1px  gold, inset -2px -2px 2px gold;
+}
 body  {
+  margin:0;
   display: flex;
   font-family: 'Montserrat', sans-serif;
-  color: rgb(20, 20, 20);
+  background-color:rgb(228, 183, 241);
+  color: indigo;}
+
+.odd {
+  background: indigo;
+  width: 100%;
+  color:rgb(217, 148, 238);
 }
 
-
-.bg {
-  position: absolute;
-  height: auto;
-  top: 0;
-  left: 0;
-  color: hotpink;
-  transform: translateZ(-2px) scale(6);
-  height: 250%;
-  object-fit: cover;
+.odd h2 {
+  color: gold;
 }
 
-.parallax {
+section {
+  padding-top: 3.3em;
   height: 100vh;
-  overflow-x: hidden;
-  overflow-y: auto;
-  perspective: 0.5px;
+  align-items: center;
+  font-size: 1em;
 }
-.container-flex {
-  transform: translateZ(0);
+.col {
+  padding-left: 20px;
 }
-
+.row {
+  width: 100%;
+  margin: 0;
+}
 h1 { 
-  font-size: 8rem;
+  color:#3e92cc;
+  font-kerning: normal;
+  font-size: 4em;
   text-align: center;
-  margin: 12rem 0 8rem 0;
+  margin-top: 0.5em;
 }
 
 .fadein {
@@ -48,67 +64,89 @@ h1 {
   opacity: 0;
 }
 .card-img {
-  margin: auto 1rem;
-  width: 40%;
+  margin: auto 1em;
+  width: 7em;
   height: auto;
   
 }
+
+#projects div {
+  font-size: 0.75em;
+}
 .project {
-  margin: 2rem
+  margin: 2em
 }
 .proj-desc{
   justify-content: center;
   margin: auto;
-  font-size: 1rem;
+  font-size: 1em;
 }
 .card-horizontal {
   display: flex;
   flex: 1 2 auto;
 }
 .card {
-  border-radius: 1rem;
-  padding: auto;
+  border-radius: 1em;
+  padding: 0;
   justify-content: center;
   text-align: center;
-  height: 20rem;
-  font-size: 1.5rem;
-  margin:1rem;
+  height: 15em;
+  font-size: 1em;
+  margin:0.1em;
     
 }
 .col {
-  margin:1rem;
+  margin:0.5em;
+  padding-left: 0.1em;
+  padding-right: 0.1em;
+}
+
+.navbutton {
+  display: inline-flex;
+  justify-content: center;
 }
 .row {
   width:100%;
 }
 h2 {
-  font-size: 4rem;
+  color:#3e92cc;
+  font-size: 2em;
   text-align: center;
-  margin: 1rem 0rem 2rem;
-  padding-top: 1rem
+  margin-top: 1rem;
+  margin-bottom: 0.5em
 }
 .col-10 {
-  font-size: 2rem;
   margin-bottom:4rem;
   width: auto;
 }
 
 .btn {
+  font-weight: 700;
+  font-size: 0.5em;
   display: inline-flex;
   justify-content: center;
-  height: 7rem;
+  height: 4em;
   width: 100%;
-  font-size:2rem;
   border-radius: 1rem;
 }
 
 a {
   align-items: center;
+  color: #3e92cc;
 }
-#navside .btn{
-  height: 4rem;
-  font-size: 1rem;
-  min-width: 7rem;
+
+.odd a {
+  color: gold;
+}
+.odd a:hover {
+  color: gold
+}
+#nav {
+  height: 3em;
+  background: indigo;
+  position: sticky;
+  top: 0;
+  z-index: 1;
 }
 
 @keyframes btn-hover {
@@ -118,16 +156,13 @@ a {
 }
   100%{
     border-radius: 50%;
-    filter: drop-shadow(0 0 0.75rem grey);
     opacity: 1;
   }
 }
 .btn:hover{
-  
-  animation: btn-hover 0s infinite;
+  animation: btn-hover 500ms 1;
   border-radius: 50%;
-  filter: drop-shadow(0 0 0.75rem grey);
-  opacity: 1 !important;
+  opacity: 1;
 }
 
 .active {
@@ -137,59 +172,18 @@ a {
 #navside {
   display: flexbox;
   position: sticky;
-  top:5rem;
+  top:5em;
   z-index: 1;
   
 }
-@media only screen and (max-width: 1000px){
-  html {
-    font-size: 12px;
-  }
-}
-@media only screen and (max-width: 805px){
-  html {
-    font-size: 8px;
-  }
 
-  h1 {
-    font-size: 5rem;
-  }
-
-  .col-10 {
-    font-size: 1.5rem;
-  }
-  .card {
-    height: 10rem;
-    font-size: 1rem;
-  }
-  .proj-desc {
-  justify-content: center;
-  margin: auto;
-  font-size: 0.75rem;
-}
-.card-img {
-  margin: auto 1rem;
-  width: 30%;
-  height: 60%;
-  
-}
-}
-@media only screen and (max-height:450px) {
-  html {
-    font-size: 6px;
-  }
-
-  
-  .card-img {
-  margin: auto;
-  width: 30%;
-  height: 60%;
-}
- 
+#skills {
+  text-align: center;
 }
 
 .logo {
-  max-height: 4rem;
-  margin: auto 0.5rem;
+  max-height: 3.5em;
+  margin: auto 0.5em 0 0;
+  padding: 0.25em;
 }
 

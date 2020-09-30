@@ -1,5 +1,6 @@
 html, body {
   scroll-behavior: smooth;
+  background-image: url('images/pink.jpg');
 
 }
 ::-webkit-scrollbar {

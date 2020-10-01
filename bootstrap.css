@@ -2707,7 +2707,6 @@ textarea.form-control {
 .btn {
   display: inline-block;
   font-weight: 400;
-  color: #888;
   text-align: center;
   vertical-align: middle;
   -webkit-user-select: none;
@@ -2734,15 +2733,9 @@ textarea.form-control {
 }
 
 .btn:hover {
-  color: #888;
   text-decoration: none;
 }
 
-.btn:focus, .btn.focus {
-  outline: 0;
-  -webkit-box-shadow: 0 0 0 0.2rem rgba(120, 194, 173, 0.25);
-          box-shadow: 0 0 0 0.2rem rgba(120, 194, 173, 0.25);
-}
 
 .btn.disabled, .btn:disabled {
   opacity: 0.65;
@@ -2758,22 +2751,16 @@ fieldset:disabled a.btn {
 }
 
 .btn-primary {
-  color: #fff;
+  color: gold;
   background-color: transparent;
   border-color: gold;
 }
 
 .btn-primary:hover {
-  color: #fff;
+  color: gold;
   background-color: transparent;
 }
 
-.btn-primary:focus, .btn-primary.focus {
-  color: #fff;
-  background-color: #cbd9ff;
-  -webkit-box-shadow: 0 0 0 0.2rem rgba(140, 203, 185, 0.5);
-          box-shadow: 0 0 0 0.2rem rgba(140, 203, 185, 0.5);
-}
 
 .btn-primary.disabled, .btn-primary:disabled {
   color: #fff;
@@ -2786,11 +2773,6 @@ fieldset:disabled a.btn {
   background-color: transparent;
 }
 
-.btn-primary:not(:disabled):not(.disabled):active:focus, .btn-primary:not(:disabled):not(.disabled).active:focus,
-.show > .btn-primary.dropdown-toggle:focus {
-  -webkit-box-shadow: 0 0 0 0.2rem rgba(140, 203, 185, 0.5);
-          box-shadow: 0 0 0 0.2rem #7bd9ff;
-}
 
 .btn-secondary {
   color: #fff;
@@ -10800,10 +10782,6 @@ a.text-dark:hover, a.text-dark:focus {
 
 .btn {
   font-family: "Montserrat", -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
-}
-
-.btn, .btn:hover {
-  color: #fff;
 }
 
 .btn-light, .btn-light:hover {

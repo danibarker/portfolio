@@ -111,7 +111,9 @@ h4 {
 
 
 .project {
-  margin: 2em
+  margin: 0 8em;
+  align-items: center;
+  height: 200px
 }
 .proj-desc{
   justify-content: center;

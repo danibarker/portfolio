@@ -9,6 +9,9 @@
     <link rel="stylesheet" href="styles.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="animations.js"></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
     <title>Danielle Barker Portfolio</title>
     
   </head>
@@ -46,6 +49,52 @@
                 I enjoy making software for Scrabble (and other word game) players.
                 You can check out those and other projects I've worked on below. <br />
                 <a onclick="alert('need to code this still');" href=''>Download Resume</a></div>
+            </div>
+          </section>
+          <section class='odd fades fadeout' id='projects'>
+            <h2>Projects</h2>
+            <div class='row'>
+              <div class='col'>
+          <div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel" data-interval="false">
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <div class='project'>
+                <h2>Word Game Twitch Bot</h2>
+
+                  A TwitchBot written in Python using TwitchIO.  Used by streamers of word games for their viewers to be able to look up words and search word patterns.
+                  <br>
+                  <a href='http://github.com/TwitchBot' target='_blank'>Link</a>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <div class='project'>
+                  <h2>Scrabble Event Discord Bot</h2>
+
+                  A Discord Bot written in Python.  Multi-function bot for running Scrabble events.  Pairing algorithms, dictionary functions, results tracking, game analysis generator, and text based word games.
+                  <br>
+                    <a href='https://discord.gg/kWHsNk' target='_blank'>Try it out</a>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <div class='project'>
+                <h2>Scrabble Stats Website</h2>
+
+                Scrabble statistics tracking for multiple clubs.  Built with VueJS
+                <br>
+                <a href='http://danibarker.github.io' target='_blank'>Link</a>
+                </div>
+              </div>
+              <a class="carousel-control-prev" href="#carouselExampleSlidesOnly" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+              </a>
+              <a class="carousel-control-next" href="#carouselExampleSlidesOnly" role="button" data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+              </a>
+            </div>
+          </div>
+              </div>
             </div>
           </section>
           <section class='odd fades fadeout' id='projects'>

@@ -1,186 +1,265 @@
-
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width,initial-scale=1.0">
-    <link rel='stylesheet' href='bootstrap.css'>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="styles.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script src="animations.js"></script>
-    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
-    <title>Danielle Barker Portfolio</title>
-    
-  </head>
-  <body>
-    <div class="container-flex">
-      <div class='row'>
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+        <link rel="stylesheet" href="bootstrap.css" />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap"
+            rel="stylesheet"
+        />
+        <link rel="stylesheet" href="styles.css" />
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="animations.js"></script>
+        <script
+            src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+            integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+            crossorigin="anonymous"
+        ></script>
+        <script
+            src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+            integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+            crossorigin="anonymous"
+        ></script>
+        <script
+            src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+            integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+            crossorigin="anonymous"
+        ></script>
+        <title>Danielle Barker Portfolio</title>
+    </head>
+    <body>
         <div class="container-flex">
-          <div id='nav' class='row fadein odd'>
-            <div class='col navbutton'>
-              <a href='#about' class='navbut btn btn-primary'>About</a>
-            </div>
-            <div class='col navbutton'>
-              <a href='#projects' class='navbut btn btn-primary'>Projects</a>
-            </div>
-            <div class='col navbutton'>        
-              <a href='#skills' class='navbut btn btn-primary'>Skills</a>
-            </div>
-            <div class='col navbutton'>        
-              <a href='#contact' class='navbut btn btn-primary'>Contact</a>
-            </div>
-          </div>
-          <section class='odd' id='name'>
-            <h1 class='fades fadein'>Danielle Barker</h1>
-          </section>
-          
-          
-          <section class='fades fadeout' id='about'>
-            <h2>About</h2>
-            <div class='row justify-content-center'>
-              <div class='paragraph col-10'>Hi, I have been creating software for over 15 years.  I'm currently in the 
-                <a href='https://www.evolveu.ca/program' target='_blank'>
-                EvolveU Full Stack Developer Program </a>
-                to build on my skills. 
-                As a Scrabble enthusiast and competitive tournament player, 
-                I enjoy making software for Scrabble (and other word game) players.
-                You can check out those and other projects I've worked on below. <br />
-                <a onclick="alert('need to code this still');" href=''>Download Resume</a></div>
-            </div>
-          </section>
-          <section class='odd fades fadeout' id='projects'>
-            <h2>Projects</h2>
-            <div class='row'>
-              <div class='col'>
-          <div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel" data-interval="false">
-            <div class="carousel-inner">
-              <div class="carousel-item active">
-                <div class='project'>
-                <h2>Word Game Twitch Bot</h2>
+            <div class="row">
+                <div class="container-flex">
+                    <div id="nav" class="row fadein odd">
+                        <div class="col navbutton">
+                            <a href="#about" class="navbut btn btn-primary"
+                                >About</a
+                            >
+                        </div>
+                        <div class="col navbutton">
+                            <a href="#projects" class="navbut btn btn-primary"
+                                >Projects</a
+                            >
+                        </div>
+                        <div class="col navbutton">
+                            <a href="#skills" class="navbut btn btn-primary"
+                                >Skills</a
+                            >
+                        </div>
+                        <div class="col navbutton">
+                            <a href="#contact" class="navbut btn btn-primary"
+                                >Contact</a
+                            >
+                        </div>
+                    </div>
+                    <section class="odd" id="name">
+                        <h1 class="fades fadein">Danielle Barker</h1>
+                    </section>
+                    <section class="fades fadeout" id="about">
+                        <h2>About</h2>
+                        <div class="row justify-content-center">
+                            <div class="paragraph col-10">
+                                Hi, I have been creating software for over 15
+                                years. I'm currently in the
+                                <a
+                                    href="https://www.evolveu.ca/program"
+                                    target="_blank"
+                                >
+                                    EvolveU Full Stack Developer Program
+                                </a>
+                                to build on my skills. As a Scrabble enthusiast
+                                and competitive tournament player, I enjoy
+                                making software for Scrabble (and other word
+                                game) players. You can check out those and other
+                                projects I've worked on below. <br />
+                                <a
+                                    onclick="alert('need to code this still');"
+                                    href=""
+                                    >Download Resume</a
+                                >
+                            </div>
+                        </div>
+                    </section>
+                    <section class="odd fades fadeout" id="projects">
+                        <h2>Projects</h2>
+                        <div class="row">
+                            <div class="col">
+                                <div
+                                    id="carouselExampleSlidesOnly"
+                                    class="carousel slide"
+                                    data-ride="carousel"
+                                    data-interval="false"
+                                >
+                                    <div class="carousel-inner">
+                                        <div class="carousel-item active">
+                                            <div class="project">
+                                                <h2>Word Game Twitch Bot</h2>
 
-                  A TwitchBot written in Python using TwitchIO.  Used by streamers of word games for their viewers to be able to look up words and search word patterns.
-                  <br>
-                  <a href='http://github.com/TwitchBot' target='_blank'>Link</a>
+                                                A TwitchBot written in Python
+                                                using TwitchIO. Used by
+                                                streamers of word games for
+                                                their viewers to be able to look
+                                                up words and search word
+                                                patterns.
+                                                <br />
+                                                <a
+                                                    href="http://github.com/TwitchBot"
+                                                    target="_blank"
+                                                    >Link</a
+                                                >
+                                            </div>
+                                        </div>
+                                        <div class="carousel-item">
+                                            <div class="project">
+                                                <h2>
+                                                    Scrabble Event Discord Bot
+                                                </h2>
+
+                                                A Discord Bot written in Python.
+                                                Multi-function bot for running
+                                                Scrabble events. Pairing
+                                                algorithms, dictionary
+                                                functions, results tracking,
+                                                game analysis generator, and
+                                                text based word games.
+                                                <br />
+                                                <a
+                                                    href="https://discord.gg/kWHsNk"
+                                                    target="_blank"
+                                                    >Try it out</a
+                                                >
+                                            </div>
+                                        </div>
+                                        <div class="carousel-item">
+                                            <div class="project">
+                                                <h2>Scrabble Stats Website</h2>
+
+                                                Scrabble statistics tracking for
+                                                multiple clubs. Built with VueJS
+                                                <br />
+                                                <a
+                                                    href="http://danibarker.github.io"
+                                                    target="_blank"
+                                                    >Link</a
+                                                >
+                                            </div>
+                                        </div>
+                                        <a
+                                            class="carousel-control-prev"
+                                            href="#carouselExampleSlidesOnly"
+                                            role="button"
+                                            data-slide="prev"
+                                        >
+                                            <span
+                                                class="carousel-control-prev-icon"
+                                                aria-hidden="true"
+                                            ></span>
+                                            <span class="sr-only"
+                                                >Previous</span
+                                            >
+                                        </a>
+                                        <a
+                                            class="carousel-control-next"
+                                            href="#carouselExampleSlidesOnly"
+                                            role="button"
+                                            data-slide="next"
+                                        >
+                                            <span
+                                                class="carousel-control-next-icon"
+                                                aria-hidden="true"
+                                            ></span>
+                                            <span class="sr-only">Next</span>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                    <section class="fades fadeout" id="skills">
+                        <h2>Skills</h2>
+                        <div class="row justify-content-md-center">
+                            <div class="col">
+                                <div class="row">
+                                    <div class="col">
+                                        <img
+                                            class="logo"
+                                            src="images/javascript.png"
+                                        />
+                                        <img
+                                            class="logo"
+                                            src="images/jquery.png"
+                                        />
+                                        <img
+                                            class="logo"
+                                            src="images/800px-Vue.js_Logo_2.svg.png"
+                                        />
+                                        <img
+                                            class="logo"
+                                            src="images/html5.png"
+                                        />
+                                        <img
+                                            class="logo"
+                                            src="images/css3.png"
+                                            alt=""
+                                        />
+                                        <img
+                                            class="logo"
+                                            src="images/bootstrap.png"
+                                            alt=""
+                                        />
+                                    </div>
+                                </div>
+                                <br />
+                                <div class="row">
+                                    <div class="col">
+                                        <img
+                                            class="logo"
+                                            src="images/nodejs.svg.png"
+                                        />
+                                        <img
+                                            class="logo"
+                                            src="images/python.png"
+                                            alt=""
+                                        />
+                                        <img
+                                            class="logo"
+                                            src="images/postgresql.png"
+                                            alt=""
+                                        />
+                                        <img
+                                            class="logo"
+                                            src="images/github.png"
+                                            alt=""
+                                        />
+                                        <img
+                                            class="logo"
+                                            src="images/photoshop.png"
+                                            alt=""
+                                        />
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                    <section class="odd fades fadeout" id="contact">
+                        <h2>Contact</h2>
+                        <div class="row justify-content-md-center">
+                            <div class="col">
+                                If you have any questions or are interested in
+                                working with me on something awesome, let me
+                                know: <br /><br />
+                                Phone: 587-852-0234 <br /><br />
+                                Email:
+                                <a href="mailto:danielleemmalee@icloud.com"
+                                    >danielleemmalee@icloud.com</a
+                                >
+                            </div>
+                        </div>
+                    </section>
                 </div>
-              </div>
-              <div class="carousel-item">
-                <div class='project'>
-                  <h2>Scrabble Event Discord Bot</h2>
-
-                  A Discord Bot written in Python.  Multi-function bot for running Scrabble events.  Pairing algorithms, dictionary functions, results tracking, game analysis generator, and text based word games.
-                  <br>
-                    <a href='https://discord.gg/kWHsNk' target='_blank'>Try it out</a>
-                </div>
-              </div>
-              <div class="carousel-item">
-                <div class='project'>
-                <h2>Scrabble Stats Website</h2>
-
-                Scrabble statistics tracking for multiple clubs.  Built with VueJS
-                <br>
-                <a href='http://danibarker.github.io' target='_blank'>Link</a>
-                </div>
-              </div>
-              <a class="carousel-control-prev" href="#carouselExampleSlidesOnly" role="button" data-slide="prev">
-                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                <span class="sr-only">Previous</span>
-              </a>
-              <a class="carousel-control-next" href="#carouselExampleSlidesOnly" role="button" data-slide="next">
-                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                <span class="sr-only">Next</span>
-              </a>
             </div>
-          </div>
-              </div>
-            </div>
-          </section>
-          <section class='odd fades fadeout' id='projects'>
-            <h2>Projects</h2><h4>Word Game Twitch Bot</h4> 
-            <div class='row'>
-              <div class='col'>
-
-                  A TwitchBot written in Python using TwitchIO.  Used by streamers of word games for their viewers to be able to look up words and search word patterns.
-                  <br>
-                  <a href='http://github.com/TwitchBot' target='_blank'>Link</a>
-                  
-                  <br> <br> 
-                  
-                </div>
-            </div>
-            <div style='display: flex;justify-content: space-around;'><a  style='width:10%;' class='btn btn-primary disabled' href='#projects2'>Prev</a> <a  style='width:10%;' class='btn btn-primary' href='#projects2'>Next</a></div>
-
-          </section>
-          <section class='fades fadeout' id='projects2'>
-            <h2>Projects</h2><h4>Scrabble Event Discord Bot</h4>
-            <div class='row'>
-                <div class='col'>
-                
-                  A Discord Bot written in Python.  Multi-function bot for running Scrabble events.  Pairing algorithms, dictionary functions, results tracking, game analysis generator, and text based word games.
-                
-                  <br><br>
-                </div>  
-            </div>
-            <div style='display: flex;justify-content: space-around;'><a  style='width:10%;' class='btn btn-primary' href='#projects'>Prev</a> <a  style='width:10%;' class='btn btn-primary' href='#projects3'>Next</a></div>
-
-          </section>
-          <section class='odd fades fadeout' id='projects3'>
-            <h2>Projects</h2><h4>Scrabble Stats Website</h4> 
-            <div class='row'>
-                <div class='col'>
-                Scrabble statistics tracking for multiple clubs.  Built with VueJS
-                <br>
-                <a href='http://danibarker.github.io' target='_blank'>Link</a>
-                </div> 
-                <br>
-            </div>
-                <div style='display: flex;justify-content: space-around;'><a  style='width:10%;' class='btn btn-primary' href='#projects2'>Prev</a> <a  style='width:10%;' class='btn btn-primary disabled' href='#projects3'>Next</a></div>
- 
-          </section>
-          <section class='fades fadeout' id='skills'>
-            <h2>Skills</h2>
-            <div class='row justify-content-md-center'>
-              <div class='col'>
-                <div class='row'>
-                  <div class='col'>
-                    <img class='logo' src='images/javascript.png'>
-                    <img class='logo' src='images/jquery.png'>
-                    <img class='logo' src='images/800px-Vue.js_Logo_2.svg.png'>
-                    <img class='logo' src='images/html5.png'>
-                    <img class='logo' src="images/css3.png" alt="">
-                    <img class='logo' src='images/bootstrap.png' alt="">
-
-                  </div>
-                </div>
-                <br>
-                <div class='row'>
-                  <div class='col'>
-                    <img class='logo' src='images/nodejs.svg.png'>
-                    <img class = 'logo' src="images/python.png" alt="">
-                    <img class='logo' src="images/postgresql.png" alt="">
-                    <img class='logo' src="images/github.png" alt="">
-                    <img class='logo' src="images/photoshop.png" alt="">
-                  </div>
-                </div>
-                
-              </div> 
-            </div> 
-
-          </section>
-          <section class='odd fades fadeout' id='contact'>
-            <h2>Contact</h2>
-            <div class='row justify-content-md-center'>
-              <div class='col'>
-                If you have any questions or are interested in working with me on something awesome, let me know: <br /><br />
-                Phone: 587-852-0234 <br /><br />
-                Email: <a href="mailto:danielleemmalee@icloud.com">danielleemmalee@icloud.com</a>
-              </div>      
-            </div>
-          </section>
-        
-      </div>
-    </div>
-  </body>
+        </div>
+    </body>
 </html>

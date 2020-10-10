@@ -2,36 +2,40 @@ html,
 body {
     scroll-behavior: smooth;
 }
-
+.bgeffect {
+    position: absolute;
+    color: white;
+    z-index: -1;
+}
 body {
     margin: 0;
     display: flex;
     font-family: "Montserrat", sans-serif;
-    background-color: rgb(228, 183, 241);
-    color: indigo;
+    background-color: #777777;
+    color: #252934;
 }
 
 ::-webkit-scrollbar {
-    background: linear-gradient(180deg, indigo, rgb(228, 183, 241));
+    background: linear-gradient(180deg, #252934, #777777);
     width: 0.5em;
     height: 0.5em;
 }
 ::-webkit-scrollbar-thumb {
-    background: linear-gradient(180deg, pink, indigo);
+    background: linear-gradient(180deg, pink, #252934);
     border-width: 10px;
     border-color: white;
     border-radius: 30px;
-    box-shadow: inset 1px 1px 1px gold, inset -2px -2px 2px gold;
+    box-shadow: inset 1px 1px 1px #777777, inset -2px -2px 2px #777777;
 }
 
 .odd {
-    background: indigo;
+    background: #252934;
     width: 100%;
-    color: rgb(217, 148, 238);
+    color: whitesmoke;
 }
 
 .odd h2 {
-    color: gold;
+    color:#e01b6c;
 }
 
 section {
@@ -48,7 +52,7 @@ section {
     margin: 0;
 }
 h1 {
-    color: #3e92cc;
+    color: #e01b6c;
     font-kerning: normal;
     font-size: 4em;
     text-align: center;
@@ -83,20 +87,19 @@ h4 {
     text-align: center;
     font-weight: 700;
     font-size: 1em;
-    color: indigo;
+    color: #252934;
 }
 
 .btn {
-    color: indigo;
-    border-color: #3e92cc;
+    color: #252934;
+    border-color: #e01b6c;
 }
 
 .btn:hover {
-    color: indigo;
+    color: #252934;
 }
 .odd .btn {
     color: white;
-    border-color: gold;
 }
 
 .odd .btn:hover {
@@ -140,7 +143,7 @@ h4 {
     width: 100%;
 }
 h2 {
-    color: #3e92cc;
+    color: #e01b6c;
     font-size: 2em;
     text-align: center;
     margin-top: 1rem;
@@ -163,18 +166,18 @@ h2 {
 
 a {
     align-items: center;
-    color: #3e92cc;
+    color: #e01b6c;
 }
 
 .odd a {
-    color: gold;
+    color: #07b5bc;
 }
 .odd a:hover {
-    color: gold;
+    color:#07b5bc;
 }
 #nav {
     height: 3em;
-    background: indigo;
+    background: #252934;
     position: sticky;
     top: 0;
     z-index: 1;

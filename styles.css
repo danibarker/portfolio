@@ -21,7 +21,7 @@ body {
     height: 0.5em;
 }
 ::-webkit-scrollbar-thumb {
-    background: linear-gradient(180deg, pink, #252934);
+    background: linear-gradient(180deg, #e01b6c, #252934);
     border-width: 10px;
     border-color: white;
     border-radius: 30px;
@@ -160,7 +160,7 @@ h2 {
     display: inline-flex;
     justify-content: center;
     height: 4em;
-    width: 100%;
+    width: 50%;
     border-radius: 1rem;
 }
 
@@ -219,7 +219,9 @@ a {
     margin: auto 0.5em 0 0;
     padding: 0.25em;
 }
-
+.invert {
+    filter: invert(1);
+}
 .down a {
     padding-top: 70px;
 }

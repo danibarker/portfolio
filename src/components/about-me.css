@@ -1,0 +1,23 @@
+.about-me {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 50px 20px;
+    background-color: #212121; /* Dark background for bold look */
+    color: white;
+}
+
+.about-me h1 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+    color: #ff4081; /* Bright accent color */
+}
+
+.about-me p {
+    font-size: 1.5rem;
+    line-height: 1.6;
+    max-width: 800px;
+    margin-bottom: 20px;
+}

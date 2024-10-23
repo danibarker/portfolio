@@ -1,0 +1,101 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "Montserrat", sans-serif;
+    background-color: #1a1a1a;
+    color: white;
+}
+
+h1,
+h2,
+h3 {
+    font-weight: 700;
+    color: #ff4081;
+}
+
+a {
+    color: #ff4081;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+button {
+    background: linear-gradient(
+        135deg,
+        #af19fb 0%,
+        #af19fb 40%,
+        #ff4081 60%,
+        #ff4081 100%
+    );
+    background-size: 400% 100%;
+    padding: 30px 60px;
+    font-size: 1.5rem;
+
+    box-shadow: inset 0 0 0 4px #ff4081;
+    color: white;
+    transition: color 0.25s 0.0833333333s;
+    position: relative;
+}
+.leave-anim {
+    animation: buttontneidarg 1s ease forwards;
+}
+button::before,
+button::after {
+    border: 0 solid transparent;
+    box-sizing: border-box;
+    content: "";
+    pointer-events: none;
+    position: absolute;
+    width: 0;
+    height: 0;
+    bottom: 0;
+    right: 0;
+}
+button::before {
+    border-bottom-width: 4px;
+    border-left-width: 4px;
+}
+button::after {
+    border-top-width: 4px;
+    border-right-width: 4px;
+}
+button:hover {
+    /* animation should stay at end state */
+    animation: buttongradient 1s ease forwards;
+
+    color: #ffffff;
+}
+button:hover::before,
+button:hover::after {
+    border-color: #af19fb;
+    transition: border-color 0s, width 0.25s, height 0.25s;
+    width: 100%;
+    height: 100%;
+}
+button:hover::before {
+    transition-delay: 0s, 0s, 0.25s;
+}
+button:hover::after {
+    transition-delay: 0s, 0.25s, 0s;
+}
+
+@keyframes buttongradient {
+    0% {
+        background-position: 0% 100%;
+    }
+    100% {
+        background-position: 100% 0%;
+    }
+}
+
+@keyframes buttontneidarg {
+    0% {
+        background-position: 100% 0%;
+    }
+    100% {
+        background-position: 0% 100%;
+    }
+}

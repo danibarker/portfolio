@@ -18,7 +18,7 @@ function AboutMe() {
                 <a href="https://www.inceptionu.ca" target="_blank">
                     InceptionU Full Stack Developer Program
                 </a>{" "}
-                to build on my skills. As a Scrabble enthusiast and competitive
+                to build on my skills! As a Scrabble enthusiast and competitive
                 tournament player, I enjoy making software for Scrabble (and
                 other word game) players. You can check out those and other
                 projects I&apos;ve worked on below.

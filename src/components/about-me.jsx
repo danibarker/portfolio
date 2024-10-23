@@ -11,9 +11,9 @@ function AboutMe() {
             animate={{ opacity: 1, y: 0, scale: 1 }}
             transition={{ duration: 1 }}
         >
-            <h1>Hi, I'm Dani</h1>
+            <h1>Hi, I am Dani</h1>
             <p>
-                Hi, I have been creating software for over 15 years. I've
+                Hi, I have been creating software for over 15 years. I have
                 recently completed the{" "}
                 <a href="https://www.inceptionu.ca" target="_blank">
                     InceptionU Full Stack Developer Program
@@ -21,7 +21,7 @@ function AboutMe() {
                 to build on my skills. As a Scrabble enthusiast and competitive
                 tournament player, I enjoy making software for Scrabble (and
                 other word game) players. You can check out those and other
-                projects I've worked on below.
+                projects I have worked on below.
             </p>
             <a href="Danielle Barker.pdf">
                 <button

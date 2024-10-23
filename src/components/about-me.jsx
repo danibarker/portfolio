@@ -13,15 +13,15 @@ function AboutMe() {
         >
             <h1>Hi, I am Dani</h1>
             <p>
-                Hi, I have been creating software for over 15 years. I have
-                recently completed the{" "}
+                I have been creating software for over 15 years. I have recently
+                completed the{" "}
                 <a href="https://www.inceptionu.ca" target="_blank">
                     InceptionU Full Stack Developer Program
                 </a>{" "}
                 to build on my skills! As a Scrabble enthusiast and competitive
                 tournament player, I enjoy making software for Scrabble (and
                 other word game) players. You can check out those and other
-                projects I have worked on below.
+                projects I have worked on below!
             </p>
             <a href="Danielle Barker.pdf">
                 <button
